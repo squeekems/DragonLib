@@ -50,12 +50,6 @@ nav
   border: 1px solid blue;
   background: black;
 }
-.sparkle
-{
-  border-radius: 40%;
-  width: 300px; /* For phone view */
-  height: auto;
-}
 h1 /* From display-markdown */
 {
   line-height: 1;
@@ -111,6 +105,12 @@ code
   display: inline-block; /* From display-markdown */
   padding: 0 8px; /* From display-markdown */
   font-family: 'Source Code Pro', Consolas, Courier, monospace; /* From display-markdown */
+}
+.sparkle
+{
+  border-radius: 40%;
+  width: 300px; /* For phone view */
+  height: auto;
 }
 
 /* Used on Login Page */

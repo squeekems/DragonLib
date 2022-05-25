@@ -61,9 +61,9 @@ You may find dragonscript, or very similar scripts, in works of fiction like:
     - readme
 
 3. Use HTML tables
-  - Each of the forms generated on the Home page use tables.
+  - Each of the forms generated on the Home Page use table tags.
 4. Implement at least two uses for forms
-  - Each of the forms generated on the home page use forms.
+  - Each of the forms generated on the Home Page use form tags.
   - My Login page uses a form tag too.
 5. Dropped Down Menu
   - The subject selector on the Home page is a dropped down menu.
