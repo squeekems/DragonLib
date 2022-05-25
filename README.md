@@ -126,8 +126,8 @@ You may find dragonscript, or very similar scripts, in works of fiction like:
   - Inside my script.js file, you will find
     - variables as early as line 2.
     - if statements on line 8.
-    - loops on line 154.
-    - collection on line 144.
-    - function on line 84.
-    - call back on 124.
+    - loops on line 104.
+    - collection on line 159.
+    - function on line 83.
+    - call back on 167.
     - event on line 10.

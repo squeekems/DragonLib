@@ -1,13 +1,13 @@
 // NavBar
-const pnlLogin = document.querySelector(".pnlLogin");
+const pnlLogin = document.querySelector(".pnlLogin"); // variables requirement
 const login = document.querySelector(".login");
 const home = document.querySelector(".home");
 const about = document.querySelector(".about");
 
 // If we are on the Login page
-if (pnlLogin != null)
+if (pnlLogin != null) // if statements requirement
 {
-  login.addEventListener
+  login.addEventListener // event requirement
   ("click", function()
     {
       window.location.href = "index.html";
@@ -50,7 +50,7 @@ if (pnlLogin != null)
   );
 }
 
-// Index
+// Index (Login Page)
 let email = "jack@dragonlib.com";
 let password = "password";
 const cmdLogin = document.querySelector(".cmdLogin");
@@ -60,9 +60,8 @@ const txtPassword = document.querySelector(".txtPassword");
 if (cmdLogin != null)
 {
   cmdLogin.addEventListener
-  ("click", function(e)
+  ("click", function()
     {
-      e.preventDefault();
       if (txtEmail.value != email || txtPassword.value != password)
       {
         alert("Wrong credentials!");
@@ -78,10 +77,10 @@ if (cmdLogin != null)
   )
 }
 
-// Home
+// Home Page
 const pnlParagraph = document.querySelector(".pnlParagraph");
 
-function updateStoryImage(strSubject)
+function updateStoryImage(strSubject) // function requirement
 {
   const storyImage = document.querySelector(".storyImage");
   if (strSubject == "Dragon")
@@ -99,7 +98,24 @@ function updateStoryImage(strSubject)
   }
 }
 
-// Subjects
+function isFilled(array)
+{
+  let blnFilled = true;
+  for (textbox of array) // loops requirement
+  {
+    if (textbox.value == "" || textbox.value == null)
+    {
+      blnFilled = false;
+      alert("Please finish the form!");
+      textbox.focus();
+      textbox.select();
+      break;
+    }
+  }
+  return blnFilled;
+}
+
+// Subjects Panel
 const cmdSubjects = document.querySelector(".cmdSubjects");
 const grpSubjects = document.querySelector(".grpSubjects");
 const cmbSubjects = document.querySelector(".cmbSubjects");
@@ -107,9 +123,8 @@ const cmbSubjects = document.querySelector(".cmbSubjects");
 if (cmdSubjects != null)
 {
   cmdSubjects.addEventListener
-  ("click", function(e)
+  ("click", function()
     {
-      e.preventDefault();
       grpSubjects.classList.add("form-close")
       if (cmbSubjects.value == "Dragon")
       {
@@ -129,7 +144,7 @@ if (cmdSubjects != null)
 // Story Output
 const txtStory = document.querySelector(".txtStory");
 
-// Dragon
+// Dragon Form
 const frmDragon = document.querySelector(".frmDragon");
 const txtDragonColor = document.querySelector(".txtDragonColor");
 const txtDragonSuperlative = document.querySelector(".txtDragonSuperlative");
@@ -141,28 +156,15 @@ const txtDragonAnimal = document.querySelector(".txtDragonAnimal");
 const txtDragonAdjective2 = document.querySelector(".txtDragonAdjective2");
 const txtDragonAdjective3 = document.querySelector(".txtDragonAdjective3");
 const txtDragonAdjective4 = document.querySelector(".txtDragonAdjective4");
-const arrDragon = [txtDragonColor, txtDragonSuperlative, txtDragonAdjective1, txtDragonBodyPartP, txtDragonBodyPart, txtDragonNoun, txtDragonAnimal, txtDragonAdjective2, txtDragonAdjective3, txtDragonAdjective4];
+const arrDragon = [txtDragonColor, txtDragonSuperlative, txtDragonAdjective1, txtDragonBodyPartP, txtDragonBodyPart, txtDragonNoun, txtDragonAnimal, txtDragonAdjective2, txtDragonAdjective3, txtDragonAdjective4]; // collections requirement
 const cmdDragon = document.querySelector(".cmdDragon");
 
 if (cmdDragon != null)
 {
   cmdDragon.addEventListener
-  ("click", function(e)
+  ("click", function()
     {
-      e.preventDefault();
-      let blnFilled = true;
-      for (textbox of arrDragon)
-      {
-        if (textbox.value == "" || textbox.value == null)
-        {
-          blnFilled = false;
-          alert("Please finish the form!");
-          textbox.focus();
-          textbox.select();
-          break;
-        }
-      }
-      if (blnFilled)
+      if (isFilled(arrDragon)) // call back requirement
       {
         pnlParagraph.classList.add("form-close");
         txtStory.classList.add("form-open");
@@ -174,7 +176,7 @@ if (cmdDragon != null)
   )
 }
 
-// Princess
+// Princess Form
 const frmPrincess = document.querySelector(".frmPrincess");
 const txtPrincessAdjective1 = document.querySelector(".txtPrincessAdjective1");
 const txtPrincessName = document.querySelector(".txtPrincessName");
@@ -194,22 +196,9 @@ const cmdPrincess = document.querySelector(".cmdPrincess");
 if (cmdPrincess != null)
 {
   cmdPrincess.addEventListener
-  ("click", function(e)
+  ("click", function()
     {
-      e.preventDefault();
-      let blnFilled = true;
-      for (textbox of arrPrincess)
-      {
-        if (textbox.value == "" || textbox.value == null)
-        {
-          blnFilled = false;
-          alert("Please finish the form!");
-          textbox.focus();
-          textbox.select();
-          break;
-        }
-      }
-      if (blnFilled)
+      if (isFilled(arrPrincess))
       {
         pnlParagraph.classList.add("form-close");
         txtStory.classList.add("form-open");
@@ -221,7 +210,7 @@ if (cmdPrincess != null)
   )
 }
 
-// Adventure
+// Adventure Form
 const frmAdventure = document.querySelector(".frmAdventure");
 const txtAdventureAdjective1 = document.querySelector(".txtAdventureAdjective1");
 const txtAdventureAdjective2 = document.querySelector(".txtAdventureAdjective2");
@@ -236,22 +225,9 @@ const cmdAdventure = document.querySelector(".cmdAdventure");
 if (cmdAdventure != null)
 {
   cmdAdventure.addEventListener
-  ("click", function(e)
+  ("click", function()
     {
-      e.preventDefault();
-      let blnFilled = true;
-      for (textbox of arrAdventure)
-      {
-        if (textbox.value == "" || textbox.value == null)
-        {
-          blnFilled = false;
-          alert("Please finish the form!");
-          textbox.focus();
-          textbox.select();
-          break;
-        }
-      }
-      if (blnFilled)
+      if (isFilled(arrAdventure))
       {
         pnlParagraph.classList.add("form-close");
         txtStory.classList.add("form-open");
@@ -262,4 +238,3 @@ if (cmdAdventure != null)
     }
   )
 }
-// About
