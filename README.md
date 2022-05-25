@@ -3,6 +3,7 @@
 ## SBA/HTML/JavaScript SBA - DragonLib  
 The file should include technical specifications and a description of your website.
 Include the link to your GitHub account in the README file(optional)  
+  - [Click here to see DragonLib on GitHub](https://squeekems.github.io/DragonLib)
 ##
 ### Motivation  
 MadLibs are such a fun way to play with strings. String manipulation is how I "learn to walk" in unfamiliar languages. I would have preferred to work towards my capstone given the nature of this SBA, but I realized the scopes did not match. Given the time limit, and the amount of learning I need for my capstone, I settled for a fun game to play with my family.
