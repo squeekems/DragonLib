@@ -3,14 +3,14 @@
 ## SBA/HTML/JavaScript SBA - DragonLib  
 The file should include technical specifications and a description of your website.  
 Include the link to your GitHub account in the README file(optional)  
-  - [Click here to see DragonLib on GitHub](https://squeekems.github.io/DragonLib)
+  - <a href="https://squeekems.github.io/DragonLib" target="_blank">Click here to see DragonLib on GitHub</a>
 ##
 ### Motivation  
 MadLibs are such a fun way to play with strings. String manipulation is how I "learn to walk" in unfamiliar languages. I would have preferred to work towards my capstone given the nature of this SBA, but I realized the scopes did not match. Given the time limit, and the amount of learning I need for my capstone, I settled for a fun game to play with my family.
 
 You may have noticed a difficult to read font in parts of the site. There are no parts where you will*need*to be able to read it. It is a fictional language that has an almost 1 to 1 relationship to the alphabet. It is called dragonscript and it is based on anglo-saxon runes.
 You may find dragonscript, or very similar scripts, in works of fiction like:  
-[How to Train Your Dragon](https://youtu.be/rcrZlzPJDzs)
+<a href="https://youtu.be/rcrZlzPJDzs" target="_blank">How to Train Your Dragon</a>
 <iframe width="300" height="auto" src="https://www.youtube.com/embed/rcrZlzPJDzs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   
