@@ -1,12 +1,15 @@
 # About
 # Jack R Kern's  
-## SBA/HTML/JavaScript SBA - DragonLib  
+## HTML/CSS/JavaScript SBA - DragonLib  
 The file should include technical specifications and description of your website.  
 Include the link to your GitHub account in the README file(optional)  
   - <a href="https://squeekems.github.io/DragonLib" target="_blank">Click here to see DragonLib on GitHub</a>
-##
+##  
+### Description  
+DragonLib is a phrasal template word game. It prompts players for a list of words to substitute for blanks in a story before reading aloud. The game is frequently played as a party game or as a pastime.
+##  
 ### Motivation  
-MadLibs are such a fun way to play with strings. String manipulation is how I "learn to walk" in unfamiliar languages. I would have preferred to work towards my capstone given the nature of this SBA, but I realized the scopes did not match. Given the time limit, and the amount of learning I need for my capstone, I settled for a fun game to play with my family.
+MadLibs are such a fun way to play with strings. String manipulation is how I "learn to walk" in unfamiliar programming languages. I would have preferred to work towards my capstone given the nature of this SBA, but I realized the scopes did not match. Given the time limit, and the amount of learning I need for my capstone, I settled for a fun game to play with my family.
 
 You may have noticed a difficult to read font in parts of the site. There are no parts where you will*need*to be able to read it. It is a fictional language that has an almost 1 to 1 relationship to the alphabet. It is called dragonscript and it is based on anglo-saxon runes.
 You may find dragonscript, or very similar scripts, in works of fiction like:  
@@ -123,11 +126,4 @@ You may find dragonscript, or very similar scripts, in works of fiction like:
   - I imported display-markdown to parse my README.md onto my About page.
   - I have a script.js file.
 2. Use variables, if statements, loops, at least one form of collections, functions/call back, and events
-  - Inside my script.js file, you will find
-    - variables as early as line 2.
-    - if statements on line 8.
-    - loops on line 104.
-    - collection on line 159.
-    - function on line 83.
-    - call back on 167.
-    - event on line 10.
+  - You will find all of this inside my script.js file.
