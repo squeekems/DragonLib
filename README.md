@@ -1,7 +1,7 @@
 # About
 # Jack R Kern's  
 ## SBA/HTML/JavaScript SBA - DragonLib  
-The file should include technical specifications and a description of your website.  
+The file should include technical specifications and description of your website.  
 Include the link to your GitHub account in the README file(optional)  
   - <a href="https://squeekems.github.io/DragonLib" target="_blank">Click here to see DragonLib on GitHub</a>
 ##
