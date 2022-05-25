@@ -106,6 +106,7 @@ button:active
 code
 {
   color: black;
+  background: rgb(200, 200, 200);
   border-radius: 5px; /* From display-markdown */
   display: inline-block; /* From display-markdown */
   padding: 0 8px; /* From display-markdown */
