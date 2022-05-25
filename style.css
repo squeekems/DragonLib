@@ -1,0 +1,174 @@
+* /* General styling */
+{
+  margin: 6px;
+  padding: 3px;
+  border-radius: 5px;
+  color: white;
+  background: black;
+  font-family: 'Source Code Pro', serif;
+  font-weight: bold;
+}
+
+/* Allows me to use my custom font. */
+@font-face
+{
+  font-family: "DragonScriptFF";
+  src: url("./resources/DragonScript-Regular.ttf");
+}
+
+/* Applied to controls that are suppose to be using my custom font. */
+.dragonscript
+{
+  font-family: "DragonScriptFF", 'Source Code Pro', serif;
+  font-weight: 200;
+}
+
+/* Applied to text inputs to size them appropriately with my custom font. */
+.txtDragonScript
+{
+  font-size: x-large;
+}
+
+/* Used on some/all pages */
+.pnlTitle
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pnlNav
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav
+{
+  display: flex;
+  justify-content: space-around;
+  width: 205px;
+  border: 1px solid blue;
+  background: black;
+}
+.sparkle
+{
+  border-radius: 40%;
+  width: 300px;
+  height: auto;
+}
+body
+{
+  background: black;
+  position: relative;
+}
+a
+{
+  margin: 0px;
+  padding: 0px;
+}
+button
+{
+  color: white;
+  background: blue;
+  box-shadow: 1px 1px rgb(0, 0, 150);
+  margin: 0px;
+  padding: 6px 3px;
+  transition: all 500ms;
+}
+button:hover
+{
+  color: rgb(200, 200, 200);
+  background: rgb(0, 0, 200);
+  transition: all 500ms;
+}
+button:active
+{
+  color: rgb(200, 200, 200);
+  background: rgb(0, 0, 200);
+  box-shadow: 0px 0px black;
+  transform: translateY(1px);
+}
+code
+{
+  color: black;
+}
+
+/* Used on Login page */
+.pnlLogin
+{  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 30px);
+}
+.cmdLogin
+{
+  margin-top: 6px;
+  grid-column: 1/3;
+  width: 50%;
+  justify-self: center;
+}
+.colLogin0
+{
+  text-align: right;
+}
+
+/* Used on Home page */
+.pnlHome
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pnlParagraph
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grpSubjects
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pnlForms
+{
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+.frmDragon,
+.frmPrincess,
+.frmAdventure
+{
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.form-open.frmDragon,
+.form-open.frmPrincess,
+.form-open.frmAdventure
+{
+  display:flex;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+.form-close
+{
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.pnlStory
+{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}

@@ -1,0 +1,265 @@
+// NavBar
+const pnlLogin = document.querySelector(".pnlLogin");
+const login = document.querySelector(".login");
+const home = document.querySelector(".home");
+const about = document.querySelector(".about");
+
+// If we are on the Login page
+if (pnlLogin != null)
+{
+  login.addEventListener
+  ("click", function()
+    {
+      window.location.href = "index.html";
+    }
+  );
+  home.addEventListener
+  ("click", function()
+    {
+      window.location.href = "#";
+      alert("Login required.");
+      txtEmail.focus();
+      txtEmail.select();
+    }
+  );
+  about.addEventListener
+  ("click", function()
+    {
+      window.location.href = "HTML/about.html";
+    }
+  );
+} else // If we are not on the Login page.
+{
+  login.addEventListener
+  ("click", function()
+    {
+      window.location.href = "../index.html";
+    }
+  );
+  home.addEventListener
+  ("click", function()
+    {
+      window.location.href = "../HTML/home.html";
+    }
+  );
+  about.addEventListener
+  ("click", function()
+    {
+      window.location.href = "../HTML/about.html";
+    }
+  );
+}
+
+// Index
+let email = "jack@dragonlib.com";
+let password = "password";
+const cmdLogin = document.querySelector(".cmdLogin");
+const txtEmail = document.querySelector(".txtEmail");
+const txtPassword = document.querySelector(".txtPassword");
+
+if (cmdLogin != null)
+{
+  cmdLogin.addEventListener
+  ("click", function(e)
+    {
+      e.preventDefault();
+      if (txtEmail.value != email || txtPassword.value != password)
+      {
+        alert("Wrong credentials!");
+        txtEmail.value = "";
+        txtPassword.value = "";
+        txtEmail.focus();
+        txtEmail.select();
+      } else
+      {
+        window.location.href = "HTML/home.html";
+      }
+    }
+  )
+}
+
+// Home
+const pnlParagraph = document.querySelector(".pnlParagraph");
+
+function updateStoryImage(strSubject)
+{
+  const storyImage = document.querySelector(".storyImage");
+  if (strSubject == "Dragon")
+  {
+    storyImage.src = "../resources/images/Dragon.png";
+  } else if (strSubject == "Princess")
+  {
+    storyImage.src = "../resources/images/princess.png";
+  } else if (strSubject == "Adventure")
+  {
+    storyImage.src = "../resources/images/Dragon2.png";
+  }else
+  {
+    storyImage.src = "../resources/images/sparkle.gif"
+  }
+}
+
+// Subjects
+const cmdSubjects = document.querySelector(".cmdSubjects");
+const grpSubjects = document.querySelector(".grpSubjects");
+const cmbSubjects = document.querySelector(".cmbSubjects");
+
+if (cmdSubjects != null)
+{
+  cmdSubjects.addEventListener
+  ("click", function(e)
+    {
+      e.preventDefault();
+      grpSubjects.classList.add("form-close")
+      if (cmbSubjects.value == "Dragon")
+      {
+        frmDragon.classList.add("form-open");
+      } else if (cmbSubjects.value == "Princess")
+      {
+        frmPrincess.classList.add("form-open");
+      } else if (cmbSubjects.value == "Adventure")
+      {
+        frmAdventure.classList.add("form-open");
+      }
+      updateStoryImage(cmbSubjects.value);
+    }
+  )
+}
+
+// Story Output
+const txtStory = document.querySelector(".txtStory");
+
+// Dragon
+const frmDragon = document.querySelector(".frmDragon");
+const txtDragonColor = document.querySelector(".txtDragonColor");
+const txtDragonSuperlative = document.querySelector(".txtDragonSuperlative");
+const txtDragonAdjective1 = document.querySelector(".txtDragonAdjective1");
+const txtDragonBodyPartP = document.querySelector(".txtDragonBodyPartP");
+const txtDragonBodyPart = document.querySelector(".txtDragonBodyPart");
+const txtDragonNoun = document.querySelector(".txtDragonNoun");
+const txtDragonAnimal = document.querySelector(".txtDragonAnimal");
+const txtDragonAdjective2 = document.querySelector(".txtDragonAdjective2");
+const txtDragonAdjective3 = document.querySelector(".txtDragonAdjective3");
+const txtDragonAdjective4 = document.querySelector(".txtDragonAdjective4");
+const arrDragon = [txtDragonColor, txtDragonSuperlative, txtDragonAdjective1, txtDragonBodyPartP, txtDragonBodyPart, txtDragonNoun, txtDragonAnimal, txtDragonAdjective2, txtDragonAdjective3, txtDragonAdjective4];
+const cmdDragon = document.querySelector(".cmdDragon");
+
+if (cmdDragon != null)
+{
+  cmdDragon.addEventListener
+  ("click", function(e)
+    {
+      e.preventDefault();
+      let blnFilled = true;
+      for (textbox of arrDragon)
+      {
+        if (textbox.value == "" || textbox.value == null)
+        {
+          blnFilled = false;
+          alert("Please finish the form!");
+          textbox.focus();
+          textbox.select();
+          break;
+        }
+      }
+      if (blnFilled)
+      {
+        pnlParagraph.classList.add("form-close");
+        txtStory.classList.add("form-open");
+        frmDragon.classList.remove("form-open");
+        txtStory.innerHTML = `The ${txtDragonColor.value} Dragon is the ${txtDragonSuperlative.value} Dragon of all. It has ${txtDragonAdjective1.value} ${txtDragonBodyPartP.value}, and a ${txtDragonBodyPart.value} shaped like a ${txtDragonNoun.value}. It loves to eat ${txtDragonAnimal.value}, although it will feast on nearly anything. It is ${txtDragonAdjective2.value} and ${txtDragonAdjective3.value}. You must be ${txtDragonAdjective4.value} around it, or you may end up as its meal!`;
+        console.log(`The ${txtDragonColor.value} Dragon is the ${txtDragonSuperlative.value} Dragon of all. It has ${txtDragonAdjective1.value} ${txtDragonBodyPartP.value}, and a ${txtDragonBodyPart.value} shaped like a ${txtDragonNoun.value}. It loves to eat ${txtDragonAnimal.value}, although it will feast on nearly anything. It is ${txtDragonAdjective2.value} and ${txtDragonAdjective3.value}. You must be ${txtDragonAdjective4.value} around it, or you may end up as its meal!`);
+      }
+    }
+  )
+}
+
+// Princess
+const frmPrincess = document.querySelector(".frmPrincess");
+const txtPrincessAdjective1 = document.querySelector(".txtPrincessAdjective1");
+const txtPrincessName = document.querySelector(".txtPrincessName");
+const txtPrincessNumber = document.querySelector(".txtPrincessNumber");
+const txtPrincessRelative = document.querySelector(".txtPrincessRelative");
+const txtPrincessPlace1 = document.querySelector(".txtPrincessPlace1");
+const txtPrincessPlace2 = document.querySelector(".txtPrincessPlace2");
+const txtPrincessVerb = document.querySelector(".txtPrincessVerb");
+const txtPrincessNounP = document.querySelector(".txtPrincessNounP");
+const txtPrincessAdjective2 = document.querySelector(".txtPrincessAdjective2");
+const txtPrincessAdjective3 = document.querySelector(".txtPrincessAdjective3");
+const txtPrincessPerson = document.querySelector(".txtPrincessPerson");
+const txtPrincessAdjective = document.querySelector(".txtPrincessAdjective");
+const arrPrincess = [txtPrincessAdjective1, txtPrincessName, txtPrincessNumber, txtPrincessRelative, txtPrincessPlace1, txtPrincessPlace2, txtPrincessVerb, txtPrincessNounP, txtPrincessAdjective2, txtPrincessAdjective3, txtPrincessPerson, txtPrincessAdjective];
+const cmdPrincess = document.querySelector(".cmdPrincess");
+
+if (cmdPrincess != null)
+{
+  cmdPrincess.addEventListener
+  ("click", function(e)
+    {
+      e.preventDefault();
+      let blnFilled = true;
+      for (textbox of arrPrincess)
+      {
+        if (textbox.value == "" || textbox.value == null)
+        {
+          blnFilled = false;
+          alert("Please finish the form!");
+          textbox.focus();
+          textbox.select();
+          break;
+        }
+      }
+      if (blnFilled)
+      {
+        pnlParagraph.classList.add("form-close");
+        txtStory.classList.add("form-open");
+        frmPrincess.classList.remove("form-open");
+        txtStory.innerHTML = `A new and ${txtPrincessAdjective1.value} fairy princess movie is coming out soon! It will be about Snow ${txtPrincessName.value} and the ${txtPrincessNumber.value} dwarves. Snow ${txtPrincessName.value} is a princess whose beauty threatens her ${txtPrincessRelative.value}, the queen. Snow ${txtPrincessName.value} is forced to flee from ${txtPrincessPlace1.value} and hides in nearby ${txtPrincessPlace2.value}. There, she discovers the dwarves ${txtPrincessVerb.value} in their ${txtPrincessNounP.value}. But the queen finds her and casts a ${txtPrincessAdjective2.value} spell on her. The dwarves take care of her until the ${txtPrincessAdjective3.value} ${txtPrincessPerson.value} comes to rescue her, and they all live ${txtPrincessAdjective.value} ever after!`;
+        console.log(`A new and ${txtPrincessAdjective1.value} fairy princess movie is coming out soon! It will be about Snow ${txtPrincessName.value} and the ${txtPrincessNumber.value} dwarves. Snow ${txtPrincessName.value} is a princess whose beauty threatens her ${txtPrincessRelative.value}, the queen. Snow ${txtPrincessName.value} is forced to flee from ${txtPrincessPlace1.value} and hides in nearby ${txtPrincessPlace2.value}. There, she discovers the dwarves ${txtPrincessVerb.value} in their ${txtPrincessNounP.value}. But the queen finds her and casts a ${txtPrincessAdjective2.value} spell on her. The dwarves take care of her until the ${txtPrincessAdjective3.value} ${txtPrincessPerson.value} comes to rescue her, and they all live ${txtPrincessAdjective.value} ever after!`);
+      }
+    }
+  )
+}
+
+// Adventure
+const frmAdventure = document.querySelector(".frmAdventure");
+const txtAdventureAdjective1 = document.querySelector(".txtAdventureAdjective1");
+const txtAdventureAdjective2 = document.querySelector(".txtAdventureAdjective2");
+const txtAdventurePlace = document.querySelector(".txtAdventurePlace");
+const txtAdventureNumber = document.querySelector(".txtAdventureNumber");
+const txtAdventureAdjective3 = document.querySelector(".txtAdventureAdjective3");
+const txtAdventureSillyWord = document.querySelector(".txtAdventureSillyWord");
+const txtAdventureVerb = document.querySelector(".txtAdventureVerb");
+const arrAdventure = [txtAdventureAdjective1, txtAdventureAdjective2, txtAdventurePlace, txtAdventureNumber, txtAdventureAdjective3, txtAdventureSillyWord, txtAdventureVerb];
+const cmdAdventure = document.querySelector(".cmdAdventure");
+
+if (cmdAdventure != null)
+{
+  cmdAdventure.addEventListener
+  ("click", function(e)
+    {
+      e.preventDefault();
+      let blnFilled = true;
+      for (textbox of arrAdventure)
+      {
+        if (textbox.value == "" || textbox.value == null)
+        {
+          blnFilled = false;
+          alert("Please finish the form!");
+          textbox.focus();
+          textbox.select();
+          break;
+        }
+      }
+      if (blnFilled)
+      {
+        pnlParagraph.classList.add("form-close");
+        txtStory.classList.add("form-open");
+        frmAdventure.classList.remove("form-open");
+        txtStory.innerHTML = `Inside the ${txtAdventureAdjective1.value} and ${txtAdventureAdjective2.value} ${txtAdventurePlace.value}, there were ${txtAdventureNumber.value} more ${txtAdventureAdjective3.value} kobolds. "${txtAdventureSillyWord.value}!" screamed the elf. "We might have bitten off more than we can ${txtAdventureVerb.value}!"`;
+        console.log(`Inside the ${txtAdventureAdjective1.value} and ${txtAdventureAdjective2.value} ${txtAdventurePlace.value}, there were ${txtAdventureNumber.value} more ${txtAdventureAdjective3.value} kobolds. "${txtAdventureSillyWord.value}!" screamed the elf. "We might have bitten off more than we can ${txtAdventureVerb.value}!"`);
+      }
+    }
+  )
+}
+// About

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css"/>
+
+    <!-- Font Link CSS Style: "font-family: 'Source Code Pro', monospace;" -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <title>DragonLib - Home</title>
+  </head>
+  <body>
+    <div class = "pnlHome">
+      <!-- TITLE CARD---------------------------------------------------------------------------------- -->
+      <div class = "pnlTitle">
+        <h1>
+          DragonLib
+        </h1>
+        <h2 class = "dragonscript" style = "font-size: xxx-large;">
+          DragonLib
+        </h2>
+      </div>
+      <!-- NAV BAR------------------------------------------------------------------------------------- -->
+      <div class = "pnlNav">
+        <nav>
+          <button class = "login">Login</button>
+          <button class = "home">Home</button>
+          <button class = "about">About</button>
+        </nav>
+      </div>
+      <div class = "pnlParagraph">
+        <p>Choose a story subject.</p>
+        <p>Fill in the form.</p>
+        <p>All of the form is required.</p>
+        <!-- SUBJECTS---------------------------------------------------------------------------------- -->
+        <div class = "grpSubjects">
+          <label 
+            for = "cmbSubjects">
+            Choose Story Subject:
+          </label>
+          <select
+            name = "cmbSubjects"
+            class = "cmbSubjects">
+            <option
+              value = "Dragon">
+              Dragon
+            </option>
+            <option
+              value = "Princess">
+              Princess
+            </option>
+            <option
+              value = "Adventure">
+              Adventure
+            </option>
+          </select>
+          <button 
+            class = "cmdSubjects"
+            type = "submit">
+            Submit
+          </button>
+        </div>
+      </div>
+      <div class = "pnlForms">
+        <!-- FORM DRAGON------------------------------------------------------------------------------- -->
+        <form class = "frmDragon">
+          <table>
+            <tr>
+              <th>Type</th>
+              <th>Word</th>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td>
+                <input 
+                  class = "txtDragonColor dragonscript txtDragonScript"
+                  placeholder = "Color"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Superlative<br/>(Ending in est)</td>
+              <td>
+                <input
+                  class = "txtDragonSuperlative dragonscript txtDragonScript"
+                  placeholder = "Superlative"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Adjective 1</td>
+              <td>
+                <input
+                  class = "txtDragonAdjective1 dragonscript txtDragonScript"
+                  placeholder = "Adjective"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Body Part<br/>(Plural)</td>
+              <td>
+                <input
+                  class = "txtDragonBodyPartP dragonscript txtDragonScript"
+                  placeholder = "Body Part"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Body Part</td>
+              <td>
+                <input
+                  class = "txtDragonBodyPart dragonscript txtDragonScript"
+                  placeholder = "Body Part"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Noun</td>
+              <td>
+                <input
+                  class = "txtDragonNoun dragonscript txtDragonScript"
+                  placeholder = "Noun"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Animal<br/>(Plural)</td>
+              <td>
+                <input
+                  class = "txtDragonAnimal dragonscript txtDragonScript"
+                  placeholder = "Animal"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Adjective 2</td>
+              <td>
+                <input
+                  class = "txtDragonAdjective2 dragonscript txtDragonScript"
+                  placeholder = "Adjective"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Adjective 3</td>
+              <td>
+                <input
+                  class = "txtDragonAdjective3 dragonscript txtDragonScript"
+                  placeholder = "Adjective"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Adjective 4</td>
+              <td>
+                <input
+                  class = "txtDragonAdjective4 dragonscript txtDragonScript"
+                  placeholder = "Adjective"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+          </table>
+          <button 
+            class = "cmdDragon"
+            type = "submit">
+            Submit
+          </button>
+        </form>
+        <!-- FORM PRINCESS----------------------------------------------------------------------------- -->
+        <form class = "frmPrincess">
+          <table>
+            <tr>
+              <th>Type</th>
+              <th>Word</th>
+            </tr>
+            <tr>
+              <td>Adjective 1</td>
+              <td>
+                <input 
+                  class = "txtPrincessAdjective1 dragonscript txtDragonScript"
+                  placeholder = "Adjective"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Name</td>
+              <td>
+                <input 
+                  class = "txtPrincessName dragonscript txtDragonScript"
+                  placeholder = "Name">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Number</td>
+              <td>
+                <input 
+                  class = "txtPrincessNumber dragonscript txtDragonScript"
+                  placeholder = "Number"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Relative</td>
+              <td>
+                <input 
+                  class = "txtPrincessRelative dragonscript txtDragonScript"
+                  placeholder = "Relative"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Place 1</td>
+              <td>
+                <input 
+                  class = "txtPrincessPlace1 dragonscript txtDragonScript"
+                  placeholder = "Place">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Place 2</td>
+              <td>
+                <input 
+                  class = "txtPrincessPlace2 dragonscript txtDragonScript"
+                  placeholder = "Place">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Verb<br/>(Ending in ing)</td>
+              <td>
+                <input 
+                  class = "txtPrincessVerb dragonscript txtDragonScript"
+                  placeholder = "Verb"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Noun<br/>(Plural)</td>
+              <td>
+                <input 
+                  class = "txtPrincessNounP dragonscript txtDragonScript"
+                  placeholder = "Noun"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Adjective 2</td>
+              <td>
+                <input 
+                  class = "txtPrincessAdjective2 dragonscript txtDragonScript"
+                  placeholder = "Adjective"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Adjective 3</td>
+              <td>
+                <input 
+                  class = "txtPrincessAdjective3 dragonscript txtDragonScript"
+                  placeholder = "Adjective"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Person</td>
+              <td>
+                <input 
+                  class = "txtPrincessPerson dragonscript txtDragonScript"
+                  placeholder = "Person"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Adjective<br/>(Ending in ly)</td>
+              <td>
+                <input 
+                  class = "txtPrincessAdjective dragonscript txtDragonScript"
+                  placeholder = "Adjective"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+          </table>
+          <button 
+            class = "cmdPrincess"
+            type = "submit">
+            Submit
+          </button>
+        </form>
+        <!-- FORM ADVENTURE---------------------------------------------------------------------------- -->
+        <form class = "frmAdventure">
+          <table>
+            <tr>
+              <th>Type</th>
+              <th>Word</th>
+            </tr>
+            <tr>
+              <td>Adjective 1</td>
+              <td>
+                <input 
+                  class = "txtAdventureAdjective1 dragonscript txtDragonScript"
+                  placeholder = "Adjective"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Adjective 2</td>
+              <td>
+                <input 
+                  class = "txtAdventureAdjective2 dragonscript txtDragonScript"
+                  placeholder = "Adjective"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Place</td>
+              <td>
+                <input 
+                  class = "txtAdventurePlace dragonscript txtDragonScript"
+                  placeholder = "Place"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Number</td>
+              <td>
+                <input 
+                  class = "txtAdventureNumber dragonscript txtDragonScript"
+                  placeholder = "Number"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Adjective 3</td>
+              <td>
+                <input 
+                  class = "txtAdventureAdjective3 dragonscript txtDragonScript"
+                  placeholder = "Adjective">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Silly Word</td>
+              <td>
+                <input 
+                  class = "txtAdventureSillyWord dragonscript txtDragonScript"
+                  placeholder = "Silly Word">
+                </input>
+              </td>
+            </tr>
+            <tr>
+              <td>Verb</td>
+              <td>
+                <input 
+                  class = "txtAdventureVerb dragonscript txtDragonScript"
+                  placeholder = "Verb"
+                  autocapitalize = "off">
+                </input>
+              </td>
+            </tr>
+          </table>
+          <button 
+            class = "cmdAdventure"
+            type = "submit">
+            Submit
+          </button>
+        </form>
+      </div>
+      <!-- STORY--------------------------------------------------------------------------------------- -->
+      <div class = pnlStory>
+        <p class = "txtStory"
+           style = "text-align: center;
+                    padding: 0px;
+                    margin: 0px;">
+        </p>
+        <img class = "storyImage"
+             src = "../resources/images/sparkle.gif"
+             alt = "Sparkle"
+             style = "height: auto;
+                      width: 300px;
+                      border-radius: 40%;"/>
+      </div>
+    </div>
+  </body>
+  <script src = "./../script/script.js"></script>
+</html>
